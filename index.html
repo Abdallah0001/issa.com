@@ -71,6 +71,18 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        animation: slideBg 10s infinite;
+    }
+    @keyframes slideBg {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
    
     section#home h1 {
@@ -104,6 +116,11 @@
         padding: 5px;
         display: inline-block;
         font-weight: bold;
+    }
+    @media (max-width: 767px) {
+        section#home {
+            height: 50vh;
+        }
     }
     
     
